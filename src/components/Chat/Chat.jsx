@@ -9,7 +9,7 @@ import Input from "../Input/Input";
 import Infobar from "../InfoBar/Infobar";
 import Messages from "../Messages/Messages";
 
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://chat-room-void.herokuapp.com/';
 
 let socket;
 

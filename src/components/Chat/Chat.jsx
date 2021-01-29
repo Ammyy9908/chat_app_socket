@@ -9,7 +9,7 @@ import Input from "../Input/Input";
 import Infobar from "../InfoBar/Infobar";
 import Messages from "../Messages/Messages";
 
-const ENDPOINT = 'https://chat-room-void.herokuapp.com/';
+const ENDPOINT = 'http://localhost:5000';
 
 let socket;
 
@@ -22,7 +22,7 @@ const Chat = ({ location }) => {
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
-    socket = io(ENDPOINT,{transports: ['websocket', 'polling', 'flashsocket']});
+    socket = io('https://chat-room-void.herokuapp.com/',{transports: ['websocket', 'polling', 'flashsocket']});
 
     setRoom(room);
     setName(name)

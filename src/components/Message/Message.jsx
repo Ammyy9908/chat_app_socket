@@ -23,7 +23,7 @@ function Message({ message,sentBy,name }) {
                 <div className="messageContainer justifyStart">
                     <p className="sentText pl-10">{sentBy}</p>
                     <div className="messageBox backgroundLight">
-                        <p className="messageText colorDark">{message}</p>
+                        <p className="messageText colorDark">{ReactEmoji.emojify(message)}</p>
                     </div>
                 </div>
         )

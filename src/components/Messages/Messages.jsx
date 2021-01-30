@@ -5,7 +5,6 @@ import ScrollToBottom from 'react-scroll-to-bottom';
 import Message from '../Message/Message';
 
 function Messages({messages,name}) {
-    console.log(messages)
     return (
         <div className="messages">
             <ScrollToBottom className="messages">

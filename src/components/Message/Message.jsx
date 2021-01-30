@@ -3,7 +3,6 @@ import './Message.css';
 import ReactEmoji from 'react-emoji';
 
 function Message({ message,sentBy,name }) {
-    console.log(sentBy,name);
     let isSendByMe = false;
     const trimmedname = name.trim().toLowerCase();
 
